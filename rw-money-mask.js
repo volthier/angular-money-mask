@@ -45,7 +45,7 @@
         ngModelCtrl.$render();
       });
 
-      element.on('keydown', function (e) {
+      element.on('keydown keypress', function (e) {
         if ((e.which || e.keyCode) === 8) {
           cents = parseInt(cents.toString().slice(0, -1)) || 0;
 
